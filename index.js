@@ -4,8 +4,7 @@ const dodger = document.getElementById("dodger");
 
 // function for moving dodger left:
 function moveDodgerLeft() {
-    const leftNumbers = dodger.style.left.replace("px", "");
-    const left = parseInt(leftNumbers, 10);
+    const left = parseInt(dodger.style.left.replace("px", ""), 10);
 
     if (left > 0) {
         dodger.style.left = `${left - 1}px`;
@@ -14,8 +13,7 @@ function moveDodgerLeft() {
 
 // function for moving dodger right:
 function moveDodgerRight() {
-    const leftNumbers = dodger.style.left.replace("px", "");
-    const left = parseInt(leftNumbers, 10);
+    const left = parseInt(dodger.style.left.replace("px", ""), 10);
 
     if (left > 0) {
         dodger.style.left = `${left + 1}px`;
